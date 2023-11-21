@@ -3,9 +3,9 @@ import random
 from constPS import * #-
 
 def roleta():
-	if (random.randint(1,6)=3)
+	if (random.randint(1,6)==3):
 		msg = "bang! morestes"
-	else 
+	else: 
 		msg = "esta salvo!"
 	return msg
 
