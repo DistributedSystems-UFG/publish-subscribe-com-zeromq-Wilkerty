@@ -21,5 +21,5 @@ while True:
 	time.sleep(5)                    # wait every 5 seconds
 	msg = str.encode("ROLETA " + roleta())
 	msg2 = str.encode("NAIPE " + escolheNaipe())	
-	s.send(msg) # publish the current time
-	
+	s.send(msg) 
+	s.send(msg2)
