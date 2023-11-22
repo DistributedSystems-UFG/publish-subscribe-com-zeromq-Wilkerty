@@ -13,5 +13,7 @@ s1.connect(p1)                         # connect to the server
 s1.setsockopt_string(zmq.SUBSCRIBE, "ROLETA")  # subscribe to ROLETA messages
 
 for i in range(5):  # Five iterations
-	time = s.recv()   # receive a message
-	print (bytes.decode(time))
+	resp1 = s.recv()   # receive a message
+	print (bytes.decode(resp1))
+	resp2 = s1.recv()   # receive a message
+	print (bytes.decode(resp2))
